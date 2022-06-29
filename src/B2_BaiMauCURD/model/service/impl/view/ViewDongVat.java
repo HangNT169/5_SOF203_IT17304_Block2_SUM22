@@ -56,6 +56,7 @@ public class ViewDongVat extends javax.swing.JFrame {
 
     // Show Table
     private void showData(List<DongVat> listShow) {
+        dtm.setNumRows(0);
         for (DongVat dv : listShow) {
             // add vao row
             dtm.addRow(dv.toDataRow());
